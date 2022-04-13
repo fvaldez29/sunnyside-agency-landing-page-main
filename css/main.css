@@ -1,0 +1,100 @@
+:root{
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow:  hsl(51, 100%, 49%);
+    /*(graphic design text)*/
+    --dark-desaturated: hsl(167, 40%, 24%);
+    /* (photography text)*/
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate: hsl(168, 34%, 41%);
+
+
+    --very-dark-desa: hsl(212, 27%, 19%);
+    --very-dark-grayish: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+
+    --fs-barlow:'Barlow', sans-serif;
+    --fs-fraunces: 'Fraunces', serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    min-width: 1440px;
+    margin: 0;
+    font-size: 18px;
+}
+header{
+    height: 100vh;
+    background: url(../images/desktop/image-header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 130px;
+}
+a{
+    text-decoration: none;
+    font-family: var(--fs-barlow);
+    color: var(--white);
+    font-size: 17px;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+li{
+    place-self: center;
+    list-style-type: none;
+}
+.navbar-special--link a{
+    padding: 15px 30px;
+    background-color: var(--white);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-blue);
+    font-family: var(--fs-fraunces);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.navbar-special--link a:hover{
+    cursor: pointer;
+    background: hsl(200deg 99% 72%);
+    color: var(--white);
+}
+.title-container{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-container h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: var(--fs-fraunces);
+    letter-spacing: 9px;
+    color: var(--white);
+}
+.arrow-down{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
